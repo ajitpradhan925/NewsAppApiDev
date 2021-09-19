@@ -7,8 +7,8 @@ var config = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-        user: 'codewithajit@gmail.com',
-        pass: 'Ajit@123321'
+        user: 'codewithajit925@gmail.com',
+        pass: 'Ajit@123'
     }
 };
 
