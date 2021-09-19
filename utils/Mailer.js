@@ -8,7 +8,6 @@ var config = {
     port: 587,
     auth: {
         user: 'codewithajit925@gmail.com',
-        pass: 'Ajit@123'
     }
 };
 
