@@ -8,6 +8,7 @@ var config = {
     port: 587,
     auth: {
         user: 'codewithajit925@gmail.com',
+        pass: 'Ajit@123'
     }
 };
 
@@ -15,7 +16,7 @@ var config = {
 var transporter = nodemailer.createTransport(config);
 
 var defaultMail = {
-    from: 'ajitteaches@gmail.com',
+    from: 'codewithajit925@gmail.com',
     text: 'test test'
 }
 
