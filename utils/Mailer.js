@@ -3,14 +3,15 @@ var _ = require('lodash');
 const nodemailer = require('nodemailer');
 
 
-var config = {
+var config = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    port: 587,
+    port: 465,
+    secure: true, 
     auth: {
-        user: 'codewithajit925@gmail.com',
-        pass: 'Ajit@123'
+        user: 'codewithajit925@gmail.com', 
+        pass: 'Ajit@123' 
     }
-};
+});
 
 
 var transporter = nodemailer.createTransport(config);
