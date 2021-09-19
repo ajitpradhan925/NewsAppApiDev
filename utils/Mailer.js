@@ -17,7 +17,7 @@ var transporter = nodemailer.createTransport(config);
 
 var defaultMail = {
     from: 'codewithajit925@gmail.com',
-    text: 'test1 test'
+    text: 'tt test'
 }
 
 const send = (to, subject, html) => {
