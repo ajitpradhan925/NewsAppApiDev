@@ -48,14 +48,19 @@ const registerUser = async (req, res, next) => {
                 });
 
 
-                // Save user object
-                user.save(function (err, user) {
-                    if (err) return next(err);
-                    res.status(201).json({
-                        success: true,
-                        msg: 'The activation email has been sent to' + user.email + ', please click the activation link within 24 hours.'
-                    })
+                res.status(201).json({
+                    success: true,
+                    msg: 'The activation email has been sent to' + user.email + ', please click the activation link within 24 hours.'
                 })
+                
+                // Save user object
+                // user.save(function (err, user) {
+                //     if (err) return next(err);
+                //     res.status(201).json({
+                //         success: true,
+                //         msg: 'The activation email has been sent to' + user.email + ', please click the activation link within 24 hours.'
+                //     })
+                // })
         })
 
     } catch (error) {

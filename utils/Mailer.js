@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 
 
 var config = {
-    host: 'smtp.ethereal.email',
+    host: 'smtp.gmail.com',
     port: 587,
     auth: {
         user: 'codewithajit925@gmail.com',
