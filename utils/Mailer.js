@@ -7,8 +7,8 @@ var config = {
     host: 'smtp.gmail.com',
     port: 587,
     auth: {
-        user: 'codewithajit@gmail.com',
-        pass: 'guopulchtjivpsat'
+        user: 'codewithajit925@gmail.com',
+        pass: 'Ajit@123'
     }
 };
 
@@ -23,7 +23,9 @@ var defaultMail = {
 const send = (to, subject, html) => {
 
     // Use default setting
-    mail = _.merge({html}, defaultMail, to);
+    var mail = _.merge({html}, defaultMail, to);
+
+    console.log("mail ", mail)
 
     transporter.sendMail(mail, function(error, info) {
         if (error) return console.log(error);
