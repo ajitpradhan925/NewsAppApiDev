@@ -19,13 +19,7 @@ const userSchema = mongoose.Schema(
         avatar: {
             type: 'string',
             default: ''
-        },
-        active: {
-            type: Boolean,
-            default: false
-        },
-        activeToken: String,
-        activeExpires: Date
+        }
     }
 )
 
